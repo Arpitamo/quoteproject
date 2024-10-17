@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height:20px;
+}
+/*#heading{
+    align-items: center;
+    justify-content: center;
+}*/
+/*home service contact us positio*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:0px;
+}
+/*nav bar-logo and img*/
+#heading{
+   /* justify-content: center;
+    text-align: center;
+    text-decoration: double;*/
+    font-family:'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight: bold;
+    font-style:oblique;
+}
+/*list stylin*/
+#logo{
+    margin:10px 10px ;
+}
+#logo img{
+    height: 60px;
+    margin:4px 5px;
+}
+#navbar{
+    justify-content: center;
+    text-align: center;
+}
+#navbar ul{
+    display: flex;
+}
+/*yeh upar ka color set ke liye hai navbar 
+ke piche*/
+#navbar::before{
+    content: "";
+    background-color: rgb(221, 221, 246);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+/*navbar ka font  size*/
+#navbar ul{
+    list-style:none;
+    font-size: 2.0rem;
+}
+/*navbar ka font color*/
+#navbar ul li a{
+    color: rgb(112, 80, 145);
+    display: block;
+    padding :3px 22px;
+    border-radius: 20px;
+    text-decoration:wavy;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(241, 243, 243);
+}
+/*yeh quotephilia ka font ke liye hai*/
+#home{
+    font-size: 70px;
+    color: rgb(245, 242, 247);
+    background-color: #9e91b3;
+    justify-content: center;
+    text-align: center;
+}
+#front{
+    color: white;
+    font-size: 50px;
+    background-color:rgb(204, 204, 244);
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+/*cause u ... wala portion ke liye hai*/
+/*#home::before{
+    content:"";
+    position: absolute;
+    background:rgb(204, 204, 244);
+   /* background: url('violet1.jpg');
+    top:220px;
+    left:0px;
+    height:300px;
+    width:100%;
+    z-index: -1;
+    opacity: 3.99;
+}*/
+#services{
+    margin: 74px;
+    display: grid;
+    grid-gap: 10px;
+    /*grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-columns: 2fr 2fr 2fr;*/
+}
+#services .box{
+    border: 5px solid #9e91b3;
+    top:260px;
+    padding: 74px;
+    margin: 3px 30px;
+    background-color:rgb(221, 221, 246);
+}
+#services .box img{
+    height:70px;
+    margin: 3px;
+    display: block;
+}
+#services.box{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+#client{
+    font-size: 70px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#client img{
+    height:123px;
+}
+#contact img{
+    height: 73px;
+}
+#contact{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+.cont{
+    text-align: center;
+    font-size: 20px;
+}
+@media (max-width:53px) {
+    /* Styles for small screens */
+}
+@media (max-width: 1500px) {
+    /* Styles for medium screens */
+}
